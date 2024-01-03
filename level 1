@@ -1,0 +1,10 @@
+bandit0@bandit:~$ ls-l
+ls-l: command not found
+bandit0@bandit:~$ ls -l
+total 4
+-rw-r----- 1 bandit1 bandit0 33 Oct  5 06:19 readme
+bandit0@bandit:~$ cat readme
+NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+bandit0@bandit:~$
+logout
+Connection to bandit.labs.overthewire.org closed.
