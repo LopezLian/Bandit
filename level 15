@@ -1,0 +1,25 @@
+bandit15@bandit:~$ man ncat | grep ssl
+                 --ssl                  Connect or listen with SSL
+                 --ssl-cert             Specify SSL certificate file (PEM) for listening
+                 --ssl-key              Specify SSL private key (PEM) for listening
+                 --ssl-verify           Verify trust and domain name of certificates
+                 --ssl-trustfile        PEM file containing trusted SSL certificates
+                 --ssl-ciphers          Cipherlist containing SSL ciphers to use
+                 --ssl-alpn             ALPN protocol list to use.
+       --ssl (Use SSL)
+       --ssl-verify (Verify server certificates)
+           In client mode, --ssl-verify is like --ssl except that it also requires verification of the server certificate. Ncat
+           default list of trusted certificates; these will also be used if available. Use --ssl-trustfile to give a custom
+       --ssl-cert certfile.pem (Specify SSL certificate)
+           or the client (in connect mode). Use it in combination with --ssl-key.
+       --ssl-key keyfile.pem (Specify SSL private key)
+           --ssl-cert.
+       --ssl-trustfile cert.pem (List trusted certificates)
+           unless combined with --ssl-verify. The argument to this option is the name of a PEM file containing trusted
+       --ssl-ciphers cipherlist (Specify SSL ciphersuites)
+       --ssl-alpn ALPN list (Specify ALPN protocol list)
+           http://www.openssl.org
+bandit15@bandit:~$ ncat --ssl localhost 30001
+jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+Correct!
+JQttfApK4SeyHwDlI9SXGR50qclOAil1
